@@ -1,14 +1,20 @@
 {
   "name": "mocha-socket.io",
   "version": "0.0.1",
-  "description": "",
+  "description": "A mocha context to help with testing socket.io",
   "main": "src/index.js",
+  "repository": "https://bitbucket.org/steveneckert/mocha-socket.io.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha ./test"
   },
-  "author": "",
+  "author": "Steven Eckert <steven.eckert@gmail.com>",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-jshint": "^1.8.4",
+    "gulp-mocha": "^1.0.0",
+    "jshint-stylish": "^0.4.0"
+  },
   "dependencies": {
     "chai": "^1.9.1",
     "mocha": "^1.21.4",
