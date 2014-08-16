@@ -4,23 +4,23 @@ var gulp = require('gulp'),
     stylish = require('jshint-stylish');
 
 gulp.task('lint', function() {
-    return gulp.src('./lib/**/*.js')
+    return gulp.src('lib/**/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter(stylish))
         .pipe(jshint.reporter('fail'));
 });
 
 gulp.task('test', ['lint'], function() {
-    return gulp.src('./test/**/*.js', {
+    return gulp.src('test/**/*.js', {
             read: false
         })
         .pipe(mocha({
-            reporter: 'nyan'
+            reporter: 'spec'
         }));
 });
 
 
 gulp.task('default', ['lint', 'test'], function() {
     // place code for your default task here
-    gulp.watch(['./lib/**/*.js', './test/**/*.js'], ['test']);
+    gulp.watch(['lib/**/*.js', 'test/**/*.js'], ['test']);
 });
