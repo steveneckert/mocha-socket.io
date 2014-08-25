@@ -1,6 +1,6 @@
 {
   "name": "mocha-socket.io",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A mocha context to help with testing socket.io",
   "main": "src/index.js",
   "repository": "https://bitbucket.org/steveneckert/mocha-socket.io.git",
