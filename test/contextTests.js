@@ -4,6 +4,13 @@ var chai = require('chai');
 var should = chai.should();
 var socketContext = require('../lib/index');
 
+describe('server', socketContext(function () {
+
+    it('should expose the server in the context', function () {
+        should.exist(this.io);
+    })
+}));
+
 describe('socket creation', socketContext(function () {
 
     it('should create a socket', function (done) {
