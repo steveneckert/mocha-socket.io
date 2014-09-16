@@ -2,10 +2,9 @@
     "name": "mocha-socket.io",
     "version": "0.0.2",
     "description": "A mocha context to help with testing socket.io",
-    "main": "src/index.js",
+    "main": "./lib/index.js",
     "repository": "https://bitbucket.org/steveneckert/mocha-socket.io.git",
     "scripts": {
-        "main": "./lib/index.js",
         "test": "./node_modules/mocha/bin/mocha ./test"
     },
     "author": "Steven Eckert <steven.eckert@gmail.com>",
